@@ -1,12 +1,30 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the paper."
-title: "MuSAE-Inv: Multi-Layer Sparse Autoencoder with Invariant Causal Feature Selection for Cross-Domain Hallucination Detection"
+message: "If you use this software, please cite it using the metadata from this file."
+title: "MuSAE-Inv: Invariant Causal Feature Selection from Sparse Autoencoders for Cross-Domain Hallucination Detection in Large Language Models"
 type: software
 authors:
-  - family-names: "Kumar"
+  - family-names: "Bhatia"
     given-names: "Vinayak"
+    affiliation: "Department of Computer Science and Engineering, Sardar Patel Institute of Technology, Mumbai, India"
+    email: "vinayak.bhatia22@spit.ac.in"
+  - family-names: "Ganwani"
+    given-names: "Jiten"
+    affiliation: "Department of Computer Science and Engineering, Sardar Patel Institute of Technology, Mumbai, India"
+    email: "jiten.ganwani22@spit.ac.in"
+  - family-names: "Gosula"
+    given-names: "Harsh"
+    affiliation: "Department of Computer Science and Engineering, Sardar Patel Institute of Technology, Mumbai, India"
+    email: "harsh.gosula22@spit.ac.in"
+  - family-names: "Mulla"
+    given-names: "Nikahat"
+    affiliation: "Department of Computer Science and Engineering, Sardar Patel Institute of Technology, Mumbai, India"
+    email: "nikahat_mulla@spit.ac.in"
+  - family-names: "Kulkarni"
+    given-names: "Sujata"
+    affiliation: "Department of Computer Science and Engineering, Sardar Patel Institute of Technology, Mumbai, India"
+    email: "sujata_kulkarni@spit.ac.in"
 version: "1.0.0"
-date-released: "2025-01-01"
+date-released: "2026-02-27"
 url: "https://github.com/vvinayakkk/MuSAE-Inv-Invariant-Causal-Feature-Selection-from-Sparse"
 repository-code: "https://github.com/vvinayakkk/MuSAE-Inv-Invariant-Causal-Feature-Selection-from-Sparse"
 license: MIT
@@ -17,10 +35,22 @@ keywords:
   - causal-feature-selection
   - large-language-models
   - cross-domain-generalization
+  - gemma-scope
+  - invariant-risk-minimization
 preferred-citation:
   type: article
   authors:
-    - family-names: "Kumar"
+    - family-names: "Bhatia"
       given-names: "Vinayak"
-  title: "MuSAE-Inv: Multi-Layer Sparse Autoencoder with Invariant Causal Feature Selection for Cross-Domain Hallucination Detection"
-  year: 2025
+    - family-names: "Ganwani"
+      given-names: "Jiten"
+    - family-names: "Gosula"
+      given-names: "Harsh"
+    - family-names: "Mulla"
+      given-names: "Nikahat"
+    - family-names: "Kulkarni"
+      given-names: "Sujata"
+  title: "MuSAE-Inv: Invariant Causal Feature Selection from Sparse Autoencoders for Cross-Domain Hallucination Detection in Large Language Models"
+  year: 2026
+  institution:
+    name: "Sardar Patel Institute of Technology, Mumbai, India"
