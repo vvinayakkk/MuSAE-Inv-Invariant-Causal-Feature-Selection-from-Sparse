@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper."
+title: "MuSAE-Inv: Multi-Layer Sparse Autoencoder with Invariant Causal Feature Selection for Cross-Domain Hallucination Detection"
+type: software
+authors:
+  - family-names: "Kumar"
+    given-names: "Vinayak"
+version: "1.0.0"
+date-released: "2025-01-01"
+url: "https://github.com/vvinayakkk/MuSAE-Inv-Invariant-Causal-Feature-Selection-from-Sparse"
+repository-code: "https://github.com/vvinayakkk/MuSAE-Inv-Invariant-Causal-Feature-Selection-from-Sparse"
+license: MIT
+keywords:
+  - hallucination-detection
+  - sparse-autoencoders
+  - mechanistic-interpretability
+  - causal-feature-selection
+  - large-language-models
+  - cross-domain-generalization
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Kumar"
+      given-names: "Vinayak"
+  title: "MuSAE-Inv: Multi-Layer Sparse Autoencoder with Invariant Causal Feature Selection for Cross-Domain Hallucination Detection"
+  year: 2025

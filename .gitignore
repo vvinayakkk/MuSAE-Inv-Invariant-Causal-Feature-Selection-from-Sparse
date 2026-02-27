@@ -1,0 +1,106 @@
+# ═══════════════════════════════════════════════════════════
+# MuSAE-Inv .gitignore
+# ═══════════════════════════════════════════════════════════
+
+# Byte-compiled / optimised / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# pytest / testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# mypy
+.mypy_cache/
+
+# Environments
+.env
+.env.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Data & model caches (too large for git)
+data/raw/
+data/processed/
+data/cache/
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Feature caches
+outputs/features/
+outputs/results/
+outputs/plots/
+
+# HuggingFace cache
+~/.cache/huggingface/
+
+# Kaggle
+/kaggle/
+
+# Logs
+*.log
+logs/
+wandb/
+runs/
+mlruns/
+
+# Large files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar

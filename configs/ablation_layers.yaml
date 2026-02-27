@@ -1,0 +1,47 @@
+# MuSAE-Inv Layer Ablation Configuration
+# Runs with different subsets of SAE layers
+
+seed: 42
+device: "cuda"
+
+model_id: "google/gemma-2-2b"
+torch_dtype: "bfloat16"
+attn_implementation: "eager"
+
+sae_release: "gemma-scope-2b-pt-res-canonical"
+
+# ── Layer ablation sweep ──
+# Override target_layers via command line or by editing this file
+# Tested subsets:
+#   Single: [6], [12], [18], [25]
+#   Pairs:  [6, 25], [12, 18], [6, 18], [12, 25]
+#   Triple: [6, 12, 18], [6, 18, 25], [12, 18, 25]
+#   Full:   [6, 12, 18, 25]
+target_layers: [6, 12, 18, 25]
+sae_width: 16384
+
+icfs_top_k: 128
+
+musae_C: 0.3
+musae_solver: "saga"
+musae_penalty: "l1"
+musae_max_iter: 5000
+musae_class_weight: "balanced"
+n_dial_train: 500
+
+n_qa: 10000
+n_dial: 1000
+n_summ: 1000
+n_tqa: 817
+n_cf_qa: 3000
+n_cf_dial: 1500
+n_cf_summ: 1500
+train_ratio: 0.7
+val_ratio: 0.15
+
+max_length: 256
+batch_size: 16
+
+output_dir: "./outputs/ablation_layers"
+force_recompute_feats: false
+force_recompute_icfs: true

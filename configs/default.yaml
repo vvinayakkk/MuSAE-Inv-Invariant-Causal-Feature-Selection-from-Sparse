@@ -1,0 +1,57 @@
+# MuSAE-Inv Default Configuration
+# Full pipeline with all datasets, ICFS top-k=128, MuSAE C=0.3
+
+seed: 42
+device: "cuda"
+
+# Model
+model_id: "google/gemma-2-2b"
+torch_dtype: "bfloat16"
+attn_implementation: "eager"
+
+# SAE
+sae_release: "gemma-scope-2b-pt-res-canonical"
+target_layers: [6, 12, 18, 25]
+sae_width: 16384
+
+# ICFS
+icfs_top_k: 128
+icfs_n_features_per_layer: 16384
+
+# MuSAE-Inv Probe
+musae_C: 0.3
+musae_solver: "saga"
+musae_penalty: "l1"
+musae_max_iter: 5000
+musae_class_weight: "balanced"
+n_dial_train: 500
+
+# Baselines
+pca_dim: 256
+saplma_hidden_dims: [256, 128]
+saplma_dropout: 0.3
+saplma_lr: 0.001
+saplma_epochs: 50
+saplma_patience: 5
+saplma_batch_size: 64
+saplma_layer: 18
+
+# Dataset
+n_qa: 10000
+n_dial: 1000
+n_summ: 1000
+n_tqa: 817
+n_cf_qa: 3000
+n_cf_dial: 1500
+n_cf_summ: 1500
+train_ratio: 0.7
+val_ratio: 0.15
+
+# Feature extraction
+max_length: 256
+batch_size: 16
+
+# Outputs
+output_dir: "./outputs"
+force_recompute_feats: false
+force_recompute_icfs: false
